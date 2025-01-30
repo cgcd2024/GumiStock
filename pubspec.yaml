@@ -1,0 +1,42 @@
+name: gdstock
+description: "gmgd stock App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.4.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+#    - assets/sample1.jpeg
+#    - assets/sample2.jpeg
+    - assets/sample_1.jpg
+    - assets/sample_2.jpg
+    - assets/gm_gd.png
+    - assets/gm_gd_black.png
+    - assets/app_icon.png
+    - assets/gm_gd_KR.png
+  uses-material-design: true
+
+flutter_native_splash:
+  color: "#42a5f5"
+  image: "assets/splash_icon.png"
+  android: true
+#how to do flutter pub run flutter_native_splash:create
+
+flutter_icons:
+  android: true
+  image_path: "assets/app_icon.png"
